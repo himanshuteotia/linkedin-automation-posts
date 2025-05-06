@@ -1,0 +1,23 @@
+{
+  "name": "linkedin-automation-posts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "This project is designed to automate LinkedIn posts. It provides tools and scripts to streamline the process of creating and publishing posts on LinkedIn.",
+  "devDependencies": {
+    "@types/node": "^22.15.13",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "axios": "^1.9.0",
+    "zod": "^3.24.4"
+  }
+}
