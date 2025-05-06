@@ -1,39 +1,61 @@
-# LinkedIn Automation Posts
+# LinkedIn Content Strategist MCP Server
 
-This project is designed to automate LinkedIn posts. It provides tools and scripts to streamline the process of creating and publishing posts on LinkedIn.
+This project is a Model Context Protocol (MCP) server designed to assist with LinkedIn content strategy. It provides tools to analyze LinkedIn content history and generate viral hooks and content ideas.
 
 ## Features
-- Automate the creation of LinkedIn posts.
-- Schedule posts for specific times.
-- Manage multiple LinkedIn accounts.
+
+- **Analyze Content History**: Identify patterns and engagement hooks from LinkedIn content history.
+- **Generate Viral Hooks**: Create viral hooks and content ideas based on a given topic.
 
 ## Installation
 
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```bash
    cd linkedin-automation-posts
    ```
-3. Install dependencies:
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-## Usage
-
-1. Configure your LinkedIn credentials in the `.env` file (if applicable).
-2. Run the automation script:
-   ```bash
-   npm start
+3. Create a `.env` file in the root directory and add your LinkedIn access token:
+   ```env
+   LINKEDIN_ACCESS_TOKEN=your_access_token_here
    ```
 
-## Contributing
+## Usage
 
-Contributions are welcome! Please fork the repository and submit a pull request.
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+
+2. Start the MCP server:
+   ```bash
+   node build/index.js
+   ```
+
+3. Use the provided tools via the MCP protocol to analyze LinkedIn content and generate ideas.
+
+## Tools
+
+### Analyze Content History
+- **Description**: Analyze LinkedIn content history to identify patterns and engagement hooks.
+- **Input**: LinkedIn user ID.
+
+### Generate Viral Hooks
+- **Description**: Generate viral hooks and content ideas for LinkedIn.
+- **Input**: Topic for generating content ideas.
+
+## Dependencies
+
+- `@modelcontextprotocol/sdk`
+- `dotenv`
+- `zod`
+- `axios`
 
 ## License
 
-This project is licensed under the ISC License. See the LICENSE file for details.
+This project is licensed under the MIT License.
